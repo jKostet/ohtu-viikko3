@@ -1,2 +1,4 @@
 language: java
-script: mvn integration-test
+script:
+  - mvn integration-test
+  - mvn checkstyle:check -D"checkstyle.config.location=copy_tsek.xml"
